@@ -36,9 +36,11 @@ else if(height==2) {
 	
 		stormy.setAngle(0);
 		stormy.move(height);
-		stormy.turn(90);
-		stormy.move(40);
-		stormy.turn(90);
+		if(height==250) {
+		drawFlatRoof();}
+		else {
+			drawPointyRoof();
+		}
 		stormy.move(height);
 		stormy.setPenColor(0,150,0);
 		stormy.setAngle(90);
@@ -58,5 +60,18 @@ else if(height==2) {
 			drawHouse(250);
 		}
 		
+	}
+	void drawFlatRoof(){
+		stormy.turn(90);
+		stormy.move(40);
+		stormy.turn(90);
+		
+	}
+	void drawPointyRoof() {
+		stormy.turn(45);
+		stormy.move(25);
+		stormy.turn(90);
+		stormy.move(25);
+		stormy.turn(45);
 	}
 }
