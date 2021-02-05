@@ -67,6 +67,12 @@ if(bo.equalsIgnoreCase("bo")) {
 else {
 	JOptionPane.showMessageDialog(null, "try again next time!");
 }
+String bordercollie = "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12235957/Border-Collie-On-White-01.jpg";
+Component image3;
+image3=createImage("bordercollie");
+quizWindow.add(image3);
+quizWindow.pack();
+String dogBreed = JOptionPane.showInputDialog(dogBreed)
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
