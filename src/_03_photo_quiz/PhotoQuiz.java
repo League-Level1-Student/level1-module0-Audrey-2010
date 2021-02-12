@@ -72,7 +72,7 @@ Component image3;
 image3=createImage("bordercollie");
 quizWindow.add(image3);
 quizWindow.pack();
-String dogBreed = JOptionPane.showInputDialog(dogBreed)
+String dogBreed = JOptionPane.showInputDialog(dogBreed);
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
