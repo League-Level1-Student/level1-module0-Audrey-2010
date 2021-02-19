@@ -75,19 +75,29 @@ else {
 String guess2=JOptionPane.showInputDialog(null,"who is this?");
 if (guess2.equalsIgnoreCase("jack")){
 	JOptionPane.showMessageDialog(null, "yep cool");
+	score=score+1;
 }
 else {
 	JOptionPane.showMessageDialog(null, "nope here we have mr.jack");
 }
+showNextImage();
 String guess3=JOptionPane.showInputDialog(null,"who is this?");
 if (guess3.equalsIgnoreCase("leonardo")){
 	JOptionPane.showMessageDialog(null, "wow you got it right");
+score=score+1;
 }
 else {
 	JOptionPane.showMessageDialog(null, "nope this is leonardo");
 }
+showNextImage();
+String guess4=JOptionPane.showInputDialog(null,"who is this?");
+if (guess4.equalsIgnoreCase("morgan")){
+	JOptionPane.showMessageDialog(null, "congrats you got it right");
+score=score+1;
+}
+else{JOptionPane.showMessageDialog(null, "whoop"); }
 		// 9. Show them their current score
-
+JOptionPane.showMessageDialog(null,"wow you got "+score+" points");
 	}
 
 	public void showNextImage() {
