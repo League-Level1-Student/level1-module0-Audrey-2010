@@ -5,7 +5,7 @@ void setup(){
         pictureOfRecord= loadImage("record.png");      //in setup method
                 pictureOfRecord.resize(400,400); 
                 
-}
+}  
 
 void draw(){
 
